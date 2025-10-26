@@ -1,7 +1,9 @@
 # The is the base image
 FROM ububtu:latest
 
+#This is a label
 LABEL version="1.0.0.0"
+LABEL name="PM-ubuntu"
 
 RUN apt-get update
 RUN apt-get update -y
