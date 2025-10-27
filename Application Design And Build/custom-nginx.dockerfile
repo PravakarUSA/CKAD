@@ -1,5 +1,5 @@
 # The is the base image
-FROM ububtu:latest
+FROM ubuntu:latest
 
 #This is a label
 LABEL version="1.0.0.0"
