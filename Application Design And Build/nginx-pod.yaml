@@ -1,0 +1,16 @@
+# nginx-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.28.0-alpine-slim
+    env:
+    - name: HELLO_MSG
+      value: "Hello from Pravakar Pod"
+    - name: GREETING
+      value: "You are Awesome, keep leaning..."
